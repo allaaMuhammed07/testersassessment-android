@@ -11,4 +11,5 @@ Also, i used POM pattern as it reduces code duplication and improves test mainte
 2. The `Actions.kt` class is for the helper functions that will be used frequently.
 3. The `MainScreenTest.kt` class is for the tests that covers all the app.
 
+Files can be found under _/app/src/androidTest/java/_
 
