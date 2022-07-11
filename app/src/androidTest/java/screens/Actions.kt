@@ -11,6 +11,12 @@ import org.hamcrest.Matcher
 import java.util.concurrent.TimeoutException
 
 class Actions {
+    /**
+     * The below is a customised function to wait for an element in the
+     * view to be displayed
+     * @param elementId = the id of the element that we want to wait for
+     * @param timeout = an optional parameter presents the wait time
+     */
     fun waitForElement(elementId: Int, timeout: Long = 180000): ViewAction? {
         return object : ViewAction {
             override fun getConstraints(): Matcher<View> {
