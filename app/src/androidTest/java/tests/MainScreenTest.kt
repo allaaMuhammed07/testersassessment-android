@@ -26,37 +26,37 @@ class MainScreenTest {
      */
     @Test
     fun checkTheScreen(){
-        mainScreen.checkTheScreenHeader()
+        mainScreen.checkScreenHeader()
         mainScreen.clickOnFloatingActionButton()
     }
 
     /**
-     * The below test is to check that the text that appears on the screen is the same
+     * The below test is to check that the text that will appear on the screen is the same
      * as expected
      */
     @Test
     fun checkOnTheScreenText()
     {
-        mainScreen.checkTheText(expectedMainScreenMessage)
+        mainScreen.checkText(expectedMainScreenMessage)
     }
 
     /**
-     * The below test is to check that the message that will appears on the screen is the same
+     * The below test is to check that the message that will appear on the screen is the same
      * as expected
      */
     @Test
-    fun checkOnTheMessageAfterClickingOnFab(){
-        mainScreen.checkTheScreenHeader()
+    fun checkMessageAfterClickingFab(){
+        mainScreen.checkScreenHeader()
         mainScreen.clickOnFloatingActionButton()
-        mainScreen.checkTheFabMessage(expectedSnackbarMessage)
+        mainScreen.checkFabMessage(expectedSnackbarMessage)
     }
 
     /**
      * The below test is to click on the kebab menu in the app and then click on settings
      */
     @Test
-    fun clickOnKebabMenuAndSettings(){
-        mainScreen.checkTheScreenHeader()
+    fun clickOnMenuAndSettings(){
+        mainScreen.checkScreenHeader()
         mainScreen.clickOnSettings()
     }
 }

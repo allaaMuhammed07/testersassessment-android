@@ -17,7 +17,7 @@ class MainScreen {
      * The below function is used to check if the header of the screen is displayed
      * We can use the espresso .isDisplayed() function for that
      */
-    fun checkTheScreenHeader(){
+    fun checkScreenHeader(){
         onView(withId(screenHeaderId)).check(matches(isDisplayed()))
     }
 
@@ -27,7 +27,7 @@ class MainScreen {
      * and meets the business criteria
      * @param screenText = the text that we are expecting
      */
-    fun checkTheText(screenText: String){
+    fun checkText(screenText: String){
         actions.waitForElement(screenId)
         onView(withParent(withId(screenId))).check(matches(withText(screenText)))
     }
@@ -46,7 +46,7 @@ class MainScreen {
      * it matches our the one we are expecting and the business criteria
      * @param fabMessage = the text that we are expecting
      */
-    fun checkTheFabMessage(fabMessage: String){
+    fun checkFabMessage(fabMessage: String){
         actions.waitForElement(screenFabId)
         onView(withId(snackbarId)).check(matches(withText(fabMessage)))
     }
